@@ -1,0 +1,34 @@
+  
+    GET http://localhost:3000/rooms
+
+
+### 
+
+
+    GET http://localhost:3000/rooms/5ea96c597e3169ebf6adea27
+
+###
+ 
+    POST http://localhost:3000/rooms
+    Content-Type: application/json
+
+    {
+        "room" : 1,
+        "gameMode" : "Ja",
+        "players" : "Kåre"
+    }
+
+###
+    
+    DELETE http://localhost:3000/rooms/5ea97db5660809edee1e6cdb
+
+
+###
+
+    PATCH http://localhost:3000/rooms/5ea96c597e3169ebf6adea27
+    Content-Type: application/json
+
+    {
+         "name" : "Nytt navn",
+         "subscribedToChannel" : "Ja"
+    }
