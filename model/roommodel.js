@@ -1,12 +1,12 @@
 const mongoose = require('mongoose')
 
 const roomSchema = new mongoose.Schema({
-    room: {
-        type: Number,
+    roomCode: {
+        type: String,
         required: true
     },
     gameMode: {
-        type: String, 
+        type: Number, 
         required: true
     },
     players: {

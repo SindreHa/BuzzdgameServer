@@ -22,7 +22,7 @@ router.get('/:id', getRooms, (req,res) => {
 // Creating one 
 router.post('/', async (req, res) => {
     const room = new Room({  // Subscriber model
-        room: req.body.room, // Change values 
+        roomCode: req.body.room, // Change values 
         gameMode: req.body.gameMode, // Change values
         players: req.body.players
     })
