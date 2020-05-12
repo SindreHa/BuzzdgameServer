@@ -1,1 +1,39 @@
-GET http://localhost:3000/rooms/
+  
+    GET http://localhost:3000/rooms
+
+
+### 
+
+
+    GET http://localhost:3000/rooms/TEST
+
+###
+ 
+    POST http://localhost:3000/rooms
+    Content-Type: application/json
+
+    {
+        "roomCode" : "test",
+        "gameMode" : 1,
+        "players" : ["Kåre", "Emil", "Jan"]
+    }
+
+###
+    
+    DELETE http://localhost:3000/rooms/5eb9b96e6b91b028273db628
+
+###
+
+    PATCH http://localhost:3000/rooms/ROMKODE
+    Content-Type: application/json
+
+    {
+         "roomCode" : "ROMKODE",
+         "gameMode" : 1,
+         "players": [
+            "Spiller1",
+            "Spiller2",
+            "Spiller3",
+            "Spiller4"
+            ]
+    }
