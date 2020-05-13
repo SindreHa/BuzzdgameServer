@@ -119,7 +119,7 @@ async function getRooms(req, res, next) {
         room = await Room.findOne({roomCode: req.params.roomCode})
         //room = await Room.findById(req.params.id)
         if (room == null) {
-            return res.status(404).json({ message: 'Cannot find Room' })
+            return res.sendStatus(404)
         }
     } catch (err) {
         return res.status(500).json({ messsage: err.message })
