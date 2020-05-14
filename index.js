@@ -2,8 +2,9 @@
 
 const express = require("express")
 const app = express()
+var cors = require('cors')
 const mongoose = require("mongoose")
-
+app.use(cors())
 mongoose.connect('mongodb+srv://BuzzdAdmin:Bachelor2020@bachelorcluster-seq7b.azure.mongodb.net/test',{useNewUrlParser: true,  useUnifiedTopology: true });
 // mongoose.connect()
 
